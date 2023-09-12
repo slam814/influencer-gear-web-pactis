@@ -1,7 +1,7 @@
 *{
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-color: #FFF;
+    
 }
 /* Shared style */
 
@@ -138,6 +138,32 @@ nav > ul > li > a{
     
 }
 
+footer{
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+footer h4{
+    background-color: ;
+    text-align: center;
+}
+
+
+
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+/* _________________________________________________________ */
+
+
 /* Responsive Style Start */
 /* _________________________________________________________ */
 /* ________________________Mobile__Device_______________________________ */
@@ -148,22 +174,40 @@ nav > ul > li > a{
     .banner,
     .selaing-group{
         flex-direction: column;
-        gap: 50px;
+       
+    }
+    .banner-content{
+        padding: 10px;
+        text-align: center;
     }
    .card-container{
+    margin: 1px;
     text-align: center;
-    margin: 0px;
-    padding: 0;
     grid-template-columns: 1fr;
+    gap: 1px;
     
    }
-    .card img{
+   .selaing-group{
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+    .card-img img{
         width: 100%;
         
     }
-}
+    
+    .see-more{
+        text-align: center;
+        padding-right: 0;
+        
+    }
+
+    
+        /* Featured products at one place section */
 
 
+        
 
 
 /* _________________________________________________________ */
@@ -179,7 +223,6 @@ nav > ul > li > a{
     }
     .selaing-group,
     .card-container{
-        padding: 50px 0px 50px 180px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
