@@ -66,6 +66,15 @@ nav > ul > li > a{
     width: 95%;
 }
 
+.selaing-group{
+    padding: 80px 210px;
+    display: flex;
+    justify-content: space-around;
+}
+.selaing-group img{
+    width: 100px;
+}
+
 
 /* Responsive Style Start */
 /* _________________________________________________________ */
@@ -74,11 +83,12 @@ nav > ul > li > a{
 
     nav, 
     nav > ul,
-    .banner{
+    .banner,
+    .selaing-group{
         flex-direction: column;
         gap: 50px;
     }
-
+   
     
 }
 
@@ -96,8 +106,15 @@ nav > ul > li > a{
         flex-direction: column;
         gap: 50px;
     }
-
-
+    .selaing-group{
+        padding: 50px 0px 50px 180px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .selaing-group img{
+        width: 100px;
+    }
     
 }
 
