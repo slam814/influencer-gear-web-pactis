@@ -1,4 +1,5 @@
 *{
+    font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
     background-color: #FFF;
 }
@@ -37,6 +38,7 @@ nav > ul {
 }
 nav > ul > li {
     list-style: none;
+    font-weight: 600;
 }
 nav > ul > li > a{
     text-decoration: none;
@@ -63,7 +65,8 @@ nav > ul > li > a{
 
 
 .banner-content-imge img{
-    width: 95%;
+    margin-right: ;
+    width: 85%;
 }
 
 .selaing-group{
@@ -74,7 +77,66 @@ nav > ul > li > a{
 .selaing-group img{
     width: 100px;
 }
+/* .popular-collection Section */
 
+
+.popular-section-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    }
+.card-container{
+    margin: 50px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.card{
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card img{
+    width: 100%;
+}
+
+.cart-title{
+    color:  #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px; 
+}
+.card-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card-discription{
+    color: var(--gray-50, #787885);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+
+}
+
+.see-more{
+    text-align: right;
+    padding-right: 125px;
+}
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
 
 /* Responsive Style Start */
 /* _________________________________________________________ */
@@ -88,8 +150,17 @@ nav > ul > li > a{
         flex-direction: column;
         gap: 50px;
     }
-   
+   .card-container{
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    grid-template-columns: 1fr;
     
+   }
+    .card img{
+        width: 100%;
+        
+    }
 }
 
 
@@ -106,7 +177,8 @@ nav > ul > li > a{
         flex-direction: column;
         gap: 50px;
     }
-    .selaing-group{
+    .selaing-group,
+    .card-container{
         padding: 50px 0px 50px 180px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
