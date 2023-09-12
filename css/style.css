@@ -1,0 +1,36 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    background: #FFF;
+}
+/* Shared style */
+
+.primary-text-color{
+    color: #3A3A3A;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav-heading{
+    font-size: 24px;
+    font-weight: 700;
+
+
+}
+
+nav > ul {
+    display: flex;
+    gap: 15px;
+}
+nav > ul > li {
+    list-style: none;
+}
+nav > ul > li > a{
+    text-decoration: none;
+}
